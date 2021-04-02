@@ -902,7 +902,8 @@ a {
   }
 }
 .bull .container .right .buttons a:first-of-type {
-  background: transparent linear-gradient(107deg, #5FD9DD 0%, #2C92EF 100%);
+  background: transparent linear-gradient(104deg, #5FD9DD 0%, #2C92EF 100%);
+  background-size: 100% auto;
 }
 @media only screen and (max-width: 1000px) {
   .bull .container .right .buttons a:first-of-type {
