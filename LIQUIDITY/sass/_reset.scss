@@ -86,9 +86,12 @@ a {
   line-height: 37px;
   transition: all .3s ease-in-out;
   font-weight: 500;
+  background-size: 100% auto;
  
   &:hover {
-    background: linear-gradient(104deg,#A22DC9 0%, #A22DC9 100%);
+   
+    background-position: right center;
+    background-size: 300%;
   }
   
   &:first-of-type {

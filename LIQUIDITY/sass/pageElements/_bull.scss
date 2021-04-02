@@ -101,6 +101,7 @@ background-position: 50% 50%;
           min-width: 263px;
           font-weight: 500;
           transition: all .3s ease-in-out;
+          background-size: 100% auto;
           text-align:center;
           @media only screen and (max-width:1000px){
            width:100%;
@@ -110,24 +111,24 @@ background-position: 50% 50%;
           @media only screen and (max-width:600px){
             padding:11.5px 5px !important;
           }
-         
           &:first-of-type {
-            background: transparent linear-gradient(104deg, #5FD9DD 0%, #2C92EF 100%);
-            background-size: 100% auto;
+            background: linear-gradient(to right, #5FD9DD 0%, #2C92EF 100%);
+           
             @media only screen and (max-width:1000px){
             margin-bottom: 40px;
              }
             
-             &:hover {
-              background: transparent linear-gradient(107deg, #2C92EF 0%, #2C92EF 100%);
-             }
           }
           &:last-of-type {
-            background: transparent linear-gradient(107deg, #FC307B 0%, #A22DC9 100%);
-            &:hover {
-              background: linear-gradient(104deg,#A22DC9 0%, #A22DC9 100%);
-            }
+            background: linear-gradient(to right, #FC307B 0%, #A22DC9 100%);
+           
           }
+          &:hover {
+            background-position: right center;
+            background-size: 300%;
+          }
+         
+         
           
         }
       }

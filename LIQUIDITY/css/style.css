@@ -85,9 +85,11 @@ a {
   line-height: 37px;
   transition: all 0.3s ease-in-out;
   font-weight: 500;
+  background-size: 100% auto;
 }
 .btn__primary:hover {
-  background: linear-gradient(104deg, #A22DC9 0%, #A22DC9 100%);
+  background-position: right center;
+  background-size: 300%;
 }
 .btn__primary:first-of-type {
   padding: 24px 50px 29px 55px;
@@ -889,6 +891,7 @@ a {
   min-width: 263px;
   font-weight: 500;
   transition: all 0.3s ease-in-out;
+  background-size: 100% auto;
   text-align: center;
 }
 @media only screen and (max-width: 1000px) {
@@ -902,22 +905,19 @@ a {
   }
 }
 .bull .container .right .buttons a:first-of-type {
-  background: transparent linear-gradient(104deg, #5FD9DD 0%, #2C92EF 100%);
-  background-size: 100% auto;
+  background: linear-gradient(to right, #5FD9DD 0%, #2C92EF 100%);
 }
 @media only screen and (max-width: 1000px) {
   .bull .container .right .buttons a:first-of-type {
     margin-bottom: 40px;
   }
 }
-.bull .container .right .buttons a:first-of-type:hover {
-  background: transparent linear-gradient(107deg, #2C92EF 0%, #2C92EF 100%);
-}
 .bull .container .right .buttons a:last-of-type {
-  background: transparent linear-gradient(107deg, #FC307B 0%, #A22DC9 100%);
+  background: linear-gradient(to right, #FC307B 0%, #A22DC9 100%);
 }
-.bull .container .right .buttons a:last-of-type:hover {
-  background: linear-gradient(104deg, #A22DC9 0%, #A22DC9 100%);
+.bull .container .right .buttons a:hover {
+  background-position: right center;
+  background-size: 300%;
 }
 
 .footer {
