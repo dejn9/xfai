@@ -81,13 +81,13 @@ a {
 .btn__primary {
   background: linear-gradient(104deg, #FC307B 0%, #A22DC9 100%);
   border-radius: 10px;
-  background-size: 300% auto;
   font-size: 20px;
   line-height: 37px;
   transition: all 0.3s ease-in-out;
+  font-weight: 500;
 }
 .btn__primary:hover {
-  background-position: right center;
+  background: linear-gradient(104deg, #A22DC9 0%, #A22DC9 100%);
 }
 .btn__primary:first-of-type {
   padding: 24px 50px 29px 55px;
@@ -911,13 +911,13 @@ a {
   }
 }
 .bull .container .right .buttons a:first-of-type:hover {
-  background: transparent linear-gradient(107deg, #2C92EF 0%, #5FD9DD 100%);
+  background: transparent linear-gradient(107deg, #2C92EF 0%, #2C92EF 100%);
 }
 .bull .container .right .buttons a:last-of-type {
   background: transparent linear-gradient(107deg, #FC307B 0%, #A22DC9 100%);
 }
-.bull .container .right .buttons a:hover {
-  background: transparent linear-gradient(107deg, #A22DC9 0%, #FC307B 100%);
+.bull .container .right .buttons a:last-of-type:hover {
+  background: linear-gradient(104deg, #A22DC9 0%, #A22DC9 100%);
 }
 
 .footer {

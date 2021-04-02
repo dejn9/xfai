@@ -82,13 +82,13 @@ a {
 .btn__primary {
   background: linear-gradient(104deg, #FC307B 0%, #A22DC9 100%);
   border-radius: 10px;
-  background-size: 300% auto;
   font-size:20px;
   line-height: 37px;
   transition: all .3s ease-in-out;
+  font-weight: 500;
  
   &:hover {
-    background-position: right center;
+    background: linear-gradient(104deg,#A22DC9 0%, #A22DC9 100%);
   }
   
   &:first-of-type {
