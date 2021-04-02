@@ -107,12 +107,19 @@ background-position: 50% 50%;
            width:100%;
             
           }
+
+          @media only screen and (max-width:600px){
+            padding:11.5px 5px !important;
+          }
          
           &:first-of-type {
             background: transparent linear-gradient(107deg, #5FD9DD 0%, #2C92EF 100%);
             @media only screen and (max-width:1000px){
             margin-bottom: 40px;
              }
+            
+               
+             
              &:hover {
               background: transparent linear-gradient(107deg, #2C92EF 0%, #5FD9DD 100%);
              }

@@ -897,6 +897,11 @@ a {
     width: 100%;
   }
 }
+@media only screen and (max-width: 600px) {
+  .bull .container .right .buttons a {
+    padding: 11.5px 5px !important;
+  }
+}
 .bull .container .right .buttons a:first-of-type {
   background: transparent linear-gradient(107deg, #5FD9DD 0%, #2C92EF 100%);
 }
