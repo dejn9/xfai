@@ -162,7 +162,7 @@ a {
   align-items: center;
   padding: 12px 0;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 970px) {
   .header .container {
     padding: 4.25px 0;
   }
@@ -261,7 +261,7 @@ a {
 .header .container .imgLogo {
   transition: all 0.3s ease-in-out;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 970px) {
   .header .container .imgLogo {
     max-width: 48px;
   }
@@ -277,7 +277,7 @@ a {
   z-index: 50;
 }
 
-@media only screen and (min-width: 667px) {
+@media only screen and (min-width: 970px) {
   .small {
     height: 50px !important;
   }
