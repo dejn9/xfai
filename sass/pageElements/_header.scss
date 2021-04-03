@@ -3,10 +3,10 @@
   overflow: hidden;
   position: fixed;
   background: black;
-  z-index: 15;
+  z-index: 999;
   top: 9px;
   left: 0;
-  border-bottom:1px solid #FC307B;
+  border-bottom: 1px solid #FC307B;
 
   .container {
     display: -webkit-box;
@@ -21,14 +21,15 @@
       padding: 4.25px 0;
 
     }
+
     @media only screen and (max-width:600px) {
-     justify-content: space-between;
+      justify-content: space-between;
     }
 
     a {
       position: relative;
 
-     
+
     }
 
     .line {
@@ -37,22 +38,23 @@
       background: #333333;
       margin: 0 45px;
       transition: all .3s ease-in-out;
-     
 
-      @media only screen and (max-width:768px) {
-        
+
+      @media only screen and (max-width:970px) {
         display: none;
       }
+
       @media only screen and (max-width:600px) {
         display: none;
       }
-      
+
     }
 
-    .whitePaper,.lqd {
+    .whitePaper,
+    .lqd {
       color: white;
       line-height: 21px;
-      font-family:'EuclidCircular', Arial;
+      font-family: 'EuclidCircular', Arial;
       font-weight: 600;
 
       &::before {
@@ -78,36 +80,44 @@
         -ms-transform: scaleX(1);
         transform: scaleX(1);
       }
-      @media only screen and (max-width:768px) {
+
+      @media only screen and (max-width:970px) {
         display: none;
       }
     }
+
     .lqd {
       margin-left: 43px;
       animation-name: color_change;
-animation-duration: 1s;
-animation-iteration-count: infinite;
-animation-direction: alternate;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
 
     }
 
-    .telegramHeaderIcon {
+    .telegramHeaderIcon,
+    .twitterHeaderIcon,
+    .github,
+    .linkedIn {
       margin-right: 20px;
-      @media only screen and (max-width:400px){
+
+      @media only screen and (max-width:400px) {
         margin-right: 15px;
       }
     }
+
     .icons {
       margin-left: auto;
-      @media only screen and (max-width:768px) {
+
+      @media only screen and (max-width:970px) {
         display: none;
       }
     }
-    
+
 
     .imgLogo {
       transition: all .3s ease-in-out;
-      
+
       @media only screen and (max-width:768px) {
         max-width: 48px;
       }
@@ -138,7 +148,8 @@ animation-direction: alternate;
       max-width: 48px;
     }
 
-    .whitePaper,.lqd {
+    .whitePaper,
+    .lqd {
       font-size: 14px;
       line-height: 19px;
     }
@@ -154,7 +165,9 @@ animation-direction: alternate;
 .mobileMenu {
   display: none;
 
-  @media only screen and (max-width:768px) {
+
+
+  @media only screen and (max-width:970px) {
     display: -webkit-box;
     display: -ms-flexbox;
     margin-left: auto;
@@ -162,11 +175,12 @@ animation-direction: alternate;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    
+
   }
 
   .line {
     margin: 0 20px !important;
+
     @media only screen and (max-width:768px) {
       display: none;
     }
@@ -186,16 +200,17 @@ animation-direction: alternate;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   height: 100vh;
+  min-height: 320px;
   background: black;
   display: flex;
   align-items: center;
   justify-content: center;
-  @media only screen and (min-width:769px){
+
+  @media only screen and (min-width:971px) {
     display: none;
   }
 
   .container {
-    padding-top: 9px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -215,10 +230,20 @@ animation-direction: alternate;
     color: white;
     font-size: 34px;
     line-height: 40px;
-    font-family:'EuclidCircular', Arial;
+    font-family: 'EuclidCircular', Arial;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     font-weight: 400;
+
+    @media only screen and (max-height:600px){
+      margin-bottom: 20px;
+    }
+  
+    @media only screen and (max-width:360px){
+      font-size:26px;
+      line-height: 32px;
+    }
+
     &:hover {
       text-decoration: none;
     }
@@ -236,31 +261,63 @@ animation-direction: alternate;
 }
 
 .headerB0 {
-  border:none;
+  border: none;
 }
 
 
 .invisible {
-  opacity:0;
+  opacity: 0;
+  @media only screen and (min-width:970px){
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes color_change {
-  from { color: white; }
-  to { color: #FC307B; }
+  from {
+    color: white;
+  }
+
+  to {
+    color: #FC307B;
+  }
 }
+
 @-moz-keyframes color_change {
-  from { color: white; }
-  to { color: #FC307B; }
+  from {
+    color: white;
+  }
+
+  to {
+    color: #FC307B;
+  }
 }
+
 @-ms-keyframes color_change {
-  from { color: white; }
-  to { color: #FC307B; }
+  from {
+    color: white;
+  }
+
+  to {
+    color: #FC307B;
+  }
 }
+
 @-o-keyframes color_change {
-  from { color: white; }
-  to { color: #FC307B; }
+  from {
+    color: white;
+  }
+
+  to {
+    color: #FC307B;
+  }
 }
+
 @keyframes color_change {
-  from { color: white; }
-  to { color: #FC307B; }
+  from {
+    color: white;
+  }
+
+  to {
+    color: #FC307B;
+  }
 }
