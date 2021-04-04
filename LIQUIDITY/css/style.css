@@ -151,7 +151,6 @@ a {
   z-index: 999;
   top: 9px;
   left: 0;
-  border-bottom: 1px solid #FC307B;
 }
 .header .container {
   display: -webkit-box;
@@ -454,6 +453,7 @@ a {
   height: 631px;
   margin-top: 115px;
   border-bottom: 1px solid #FC307B;
+  border-top: 1px solid #FC307B;
 }
 @media only screen and (max-width: 970px) {
   .hero {
