@@ -1495,20 +1495,9 @@ span {
       transform: translateY(-50%);
     }
   }
-  .box-1 .subox:first-of-type::after, .box-1 .subox:nth-of-type(3)::after {
-    top: 50% !important;
-  }
   @media only screen and (max-width: 360px) {
     .box-1 .subox:first-of-type, .box-1 .subox:nth-of-type(3) {
       height: 230px !important;
-    }
-  }
-  .box-1 .subox:first-of-type .text, .box-1 .subox:nth-of-type(3) .text {
-    margin-top: -40px;
-  }
-  @media only screen and (max-width: 360px) {
-    .box-1 {
-      margin: 50px 0;
     }
   }
 
@@ -1536,6 +1525,11 @@ span {
       width: 190px;
     }
   }
+  @media only screen and (max-width: 700px) {
+    .subox {
+      height: 300px;
+    }
+  }
   @media only screen and (max-width: 586px) {
     .subox {
       display: table-cell;
@@ -1550,25 +1544,20 @@ span {
       margin-left: auto;
     }
   }
-  @media only screen and (max-width: 568px) {
-    .subox {
-      height: 400px;
-    }
-  }
   @media only screen and (max-width: 468px) {
     .subox {
       margin: 100px 0;
-      height: 450px;
     }
   }
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: 400px) {
     .subox {
+      height: 350px;
       margin-bottom: 50px;
     }
   }
   @media only screen and (max-width: 360px) {
     .subox {
-      margin: 100px 0 50px 0;
+      height: 280px;
     }
   }
 }
