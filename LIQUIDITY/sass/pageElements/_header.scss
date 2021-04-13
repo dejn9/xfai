@@ -6,6 +6,7 @@
   z-index: 999;
   top: 9px;
   left: 0;
+
   .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -105,7 +106,7 @@
     }
 
     .icons {
-      margin-left: auto;
+      margin-left: 50px;
 
       @media only screen and (max-width:970px) {
         display: none;
@@ -157,11 +158,15 @@
     }
   }
 
-
+.btn-farm {
+  height:30px;
+}
 }
 
 .mobileMenu {
   display: none;
+
+
 
   @media only screen and (max-width:970px) {
     display: -webkit-box;
@@ -316,4 +321,41 @@
   to {
     color: #FC307B;
   }
+}
+
+.btn-farm {
+  font-size:16px;
+  margin-left: auto;
+  background: linear-gradient(104deg, #a22dc9  0%, #a22dc9 100%); 
+  border-radius: 10px !important;
+  opacity: 1 !important;
+  position: relative;
+  z-index:15;
+  transition: opacity .5s ease-in-out; 
+  color:white;
+  height: 39px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 170px;
+  font-weight: 600;
+  line-height: 24px;
+  font-family: 'EuclidCircular', Arial;
+}
+
+.btn-farm::before {
+  content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(104deg, #fc307b  0%, #a22dc9 100%);
+    transition: opacity .5s ease-in-out; 
+    border-radius: 10px;
+    z-index:-2; 
+}
+
+.btn-farm:hover::before {
+  opacity: 0;
 }

@@ -79,17 +79,10 @@ a {
 }
 
 .btn__primary {
-  background: linear-gradient(104deg, #FC307B 0%, #A22DC9 100%);
-  border-radius: 10px;
-  font-size: 20px;
-  line-height: 37px;
-  transition: all 0.3s ease-in-out;
-  font-weight: 500;
-  background-size: 100% auto;
+  background: linear-gradient(104deg, #a22dc9 0%, #a22dc9 100%);
 }
-.btn__primary:hover {
-  background-position: right center;
-  background-size: 300%;
+.btn__primary::before {
+  background: linear-gradient(104deg, #fc307b 0%, #a22dc9 100%);
 }
 .btn__primary:first-of-type {
   padding: 24px 50px 29px 55px;
@@ -103,6 +96,35 @@ a {
     text-align: center;
     padding: 15px 5px;
   }
+}
+
+.btn__primary, .btn__lightBlue {
+  border-radius: 10px;
+  opacity: 1;
+  position: relative;
+  z-index: 15;
+  transition: opacity 0.5s ease-in-out;
+  color: white;
+  font-size: 20px;
+  line-height: 37px;
+  font-weight: 500;
+  color: white;
+}
+
+.btn__primary::before, .btn__lightBlue::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  border-radius: 10px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out;
+  z-index: -2;
+}
+
+.btn__primary:hover::before, .btn__lightBlue:hover::before {
+  opacity: 0;
 }
 
 @font-face {
@@ -250,7 +272,7 @@ a {
   }
 }
 .header .container .icons {
-  margin-left: auto;
+  margin-left: 50px;
 }
 @media only screen and (max-width: 970px) {
   .header .container .icons {
@@ -295,6 +317,9 @@ a {
   .small .container {
     padding: 4.25px 0;
   }
+}
+.small .btn-farm {
+  height: 30px;
 }
 
 .mobileMenu {
@@ -443,6 +468,43 @@ a {
     color: #FC307B;
   }
 }
+.btn-farm {
+  font-size: 16px;
+  margin-left: auto;
+  background: linear-gradient(104deg, #a22dc9 0%, #a22dc9 100%);
+  border-radius: 10px !important;
+  opacity: 1 !important;
+  position: relative;
+  z-index: 15;
+  transition: opacity 0.5s ease-in-out;
+  color: white;
+  height: 39px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 170px;
+  font-weight: 600;
+  line-height: 24px;
+  font-family: "EuclidCircular", Arial;
+}
+
+.btn-farm::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(104deg, #fc307b 0%, #a22dc9 100%);
+  transition: opacity 0.5s ease-in-out;
+  border-radius: 10px;
+  z-index: -2;
+}
+
+.btn-farm:hover::before {
+  opacity: 0;
+}
+
 .hero {
   background: url("../images/hero/im2.png");
   background-repeat: no-repeat;
