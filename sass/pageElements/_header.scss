@@ -191,7 +191,7 @@
 
 .sidePanel {
   position: fixed;
-  z-index: 99;
+  z-index: 99999;
   width: 100vw;
   top: 50px;
   opacity: 0;
@@ -206,7 +206,7 @@
   align-items: center;
   justify-content: center;
 
-  @media only screen and (min-width:971px) {
+  @media only screen and (min-width:1151px) {
     display: none;
   }
 
@@ -266,9 +266,9 @@
 
 
 .invisible {
-  opacity: 0;
+  opacity: 0 !important;
   @media only screen and (min-width:1150px){
-    opacity: 1;
+    opacity: 1 !important;
   }
 }
 
@@ -326,7 +326,7 @@
   font-size:16px;
   margin-left: auto;
   border-radius: 10px !important;
-  opacity: 1 !important;
+  opacity: 1;
   position: relative;
   z-index:15;
   transition: opacity .5s ease-in-out; 

@@ -346,7 +346,7 @@ a {
 
 .sidePanel {
   position: fixed;
-  z-index: 99;
+  z-index: 99999;
   width: 100vw;
   top: 50px;
   opacity: 0;
@@ -361,7 +361,7 @@ a {
   align-items: center;
   justify-content: center;
 }
-@media only screen and (min-width: 971px) {
+@media only screen and (min-width: 1151px) {
   .sidePanel {
     display: none;
   }
@@ -419,11 +419,11 @@ a {
 }
 
 .invisible {
-  opacity: 0;
+  opacity: 0 !important;
 }
 @media only screen and (min-width: 1150px) {
   .invisible {
-    opacity: 1;
+    opacity: 1 !important;
   }
 }
 
@@ -471,7 +471,7 @@ a {
   font-size: 16px;
   margin-left: auto;
   border-radius: 10px !important;
-  opacity: 1 !important;
+  opacity: 1;
   position: relative;
   z-index: 15;
   transition: opacity 0.5s ease-in-out;
@@ -529,7 +529,7 @@ a {
   border-bottom: 1px solid #FC307B;
   border-top: 1px solid #FC307B;
 }
-@media only screen and (max-width: 970px) {
+@media only screen and (max-width: 1150px) {
   .hero {
     margin-top: 64px;
   }
