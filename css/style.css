@@ -466,13 +466,25 @@ span {
 }
 
 .lgeHere {
-  padding-top: 180px;
+  margin-top: 100px;
+  padding-top: 80px;
   text-align: center;
   position: relative;
+}
+@media only screen and (max-width: 1150px) {
+  .lgeHere {
+    margin-top: 0px;
+    padding-top: 140px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .lgeHere {
     padding-top: 110px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .lgeHere {
+    padding-top: 70px;
   }
 }
 .lgeHere .container {
@@ -480,6 +492,12 @@ span {
   border-bottom: 3px solid #333333;
 }
 @media only screen and (max-width: 768px) {
+  .lgeHere .container {
+    padding-bottom: 70px;
+    padding-top: 20px;
+  }
+}
+@media only screen and (max-width: 360px) {
   .lgeHere .container {
     padding-bottom: 50px;
   }
@@ -491,7 +509,7 @@ span {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  top: 110px;
+  top: 0px;
   z-index: -1;
   width: 100%;
   background: url("../images/Background/back.png") repeat-x, -webkit-gradient(linear, left top, left bottom, from(#212121), color-stop(70%, #000000));
@@ -518,6 +536,12 @@ span {
     line-height: 73px;
   }
 }
+@media only screen and (max-width: 360px) {
+  .lgeHere__heading {
+    font-size: 40px;
+    line-height: 52px;
+  }
+}
 .lgeHere__paragraph {
   color: white;
   font-size: 42px;
@@ -539,6 +563,11 @@ span {
 }
 .lgeHere__paragraph-1 {
   margin: 32px 0 21px 0;
+}
+@media only screen and (max-width: 360px) {
+  .lgeHere__paragraph-1 {
+    margin: 20px auto;
+  }
 }
 .lgeHere__paragraph span {
   font-weight: 500;
@@ -601,11 +630,6 @@ span {
   padding-top: 70px;
   margin-top: 0px;
 }
-@media only screen and (max-width: 1150px) {
-  .hero {
-    margin-top: 50px;
-  }
-}
 @media only screen and (max-width: 768px) {
   .hero {
     height: auto;
@@ -614,7 +638,7 @@ span {
 }
 @media only screen and (max-width: 360px) {
   .hero {
-    padding-top: 30px;
+    padding-top: 50px;
   }
 }
 .hero span {
@@ -2094,6 +2118,22 @@ span {
     padding-top: 10px;
     margin-top: 10px;
   }
+}
+.footer__bottom {
+  display: flex;
+  max-width: 220px;
+  margin: 0 auto;
+  color: white;
+  margin-top: 50px;
+}
+.footer__bottom p, .footer__bottom a {
+  font-size: 13px;
+  line-height: 17px;
+  font-family: "EuclidCircular", Arial;
+}
+.footer__bottom a {
+  margin-left: 15px;
+  color: #5FD9DD;
 }
 
 /*# sourceMappingURL=style.css.map */
