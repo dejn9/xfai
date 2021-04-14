@@ -474,9 +474,9 @@ span {
   padding-bottom: 80px;
   border-bottom: 3px solid #333333;
 }
-@media only screen and (max-width: 1320px) {
-  .lgeHere {
-    display: none;
+@media only screen and (max-width: 668px) {
+  .lgeHere .container {
+    padding-bottom: 40px;
   }
 }
 .lgeHere .bg {
@@ -493,6 +493,11 @@ span {
   background: url("../images/Background/back.png") repeat-x, -o-linear-gradient(top, #212121 0%, #000000 70%);
   background: url("../images/Background/back.png") repeat-x, linear-gradient(to bottom, #212121 0%, #000000 70%);
 }
+@media only screen and (max-width: 1150px) {
+  .lgeHere .bg {
+    top: 50px;
+  }
+}
 .lgeHere__heading {
   background: linear-gradient(104deg, #FC307B 0%, #A22DC9 100%);
   display: inline-block;
@@ -502,6 +507,12 @@ span {
   font-size: 60px;
   line-height: 79px;
 }
+@media only screen and (max-width: 668px) {
+  .lgeHere__heading {
+    font-size: 46px;
+    line-height: 60px;
+  }
+}
 .lgeHere__paragraph {
   color: white;
   font-size: 42px;
@@ -509,8 +520,24 @@ span {
   font-family: "EuclidCircular", Arial;
   line-height: 56px;
 }
+@media only screen and (max-width: 868px) {
+  .lgeHere__paragraph {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 668px) {
+  .lgeHere__paragraph {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
 .lgeHere__paragraph-1 {
   margin: 32px 0 21px 0;
+}
+@media only screen and (max-width: 668px) {
+  .lgeHere__paragraph-1 {
+    margin: 20px 0 20px 0;
+  }
 }
 .lgeHere__paragraph span {
   font-weight: 500;
@@ -532,14 +559,18 @@ span {
   transition: opacity 0.5s ease-in-out;
   color: white;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 668px) {
   .lgeHere a {
-    width: 100%;
+    font-size: 22px;
+    margin-top: 30px;
+    padding: 30px 5px;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
   .lgeHere a {
-    padding: 11.5px 5px !important;
+    min-width: 100%;
+    width: 100%;
+    margin-top: 0;
   }
 }
 .lgeHere a::before {
@@ -567,12 +598,6 @@ span {
   max-height: 600px;
   padding-top: 70px;
   margin-top: 0px;
-}
-@media only screen and (max-width: 1320px) {
-  .hero {
-    padding-top: 120px;
-    margin-top: 100px;
-  }
 }
 @media only screen and (max-width: 1150px) {
   .hero {
@@ -606,11 +631,6 @@ span {
   background: url("../images/Background/back.png") repeat-x, -webkit-gradient(linear, left top, left bottom, from(#212121), color-stop(70%, #000000));
   background: url("../images/Background/back.png") repeat-x, -o-linear-gradient(top, #212121 0%, #000000 70%);
   background: url("../images/Background/back.png") repeat-x, linear-gradient(to bottom, #212121 0%, #000000 70%);
-}
-@media only screen and (max-width: 1320px) {
-  .hero .bg {
-    display: block;
-  }
 }
 .hero__heading {
   min-width: 620px;
