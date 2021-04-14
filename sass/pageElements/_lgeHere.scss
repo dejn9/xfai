@@ -2,11 +2,14 @@
     padding-top: 180px;
     text-align:center;
     position: relative;
+    @media only screen and (max-width:768px){
+        padding-top: 110px;
+    }
     .container {
         padding-bottom: 80px;
         border-bottom: 3px solid #333333;
-        @media only screen and (max-width:668px){
-            padding-bottom: 40px;
+        @media only screen and (max-width:768px){
+            padding-bottom: 50px;
         }
     }
    
@@ -34,12 +37,12 @@
         font-family: Gobold;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size:60px;
+        font-size:72px;
         line-height: 79px;
-
-        @media only screen and (max-width:668px){
-            font-size:46px;
-            line-height: 60px;
+        
+        @media only screen and (max-width:768px){
+            font-size:67px;
+            line-height: 69px;
         }
     }
     &__paragraph {
@@ -48,25 +51,25 @@
         font-weight: 300;
         font-family:'EuclidCircular', Arial;
         line-height: 56px;
-        @media only screen and (max-width:868px){
-            font-size:32px;
 
+        @media only screen and (max-width:768px){
+            font-size:35px;
+            line-height: 47px;
         }
-        @media only screen and (max-width:668px){
-            font-size:24px;
-            line-height: 35px;
+        @media only screen and (max-width:360px){
+            font-size:18px;
+            line-height: 24px;
         }
+       
         &-1 {
             margin:32px 0 21px 0;
-            @media only screen and (max-width:668px){
-                margin:20px 0 20px 0;
-    
-            }
+           
         }
         span {
             font-weight: 500;
         }
     }
+    
     a {
         border-radius: 10px;
         font-size:27px;
@@ -83,21 +86,20 @@
         z-index:15;
         transition: opacity .5s ease-in-out; 
         color:white;
-        
 
-        @media only screen and (max-width:668px){
-         font-size:22px;
-          margin-top: 30px;
-          padding:30px 5px;
+        @media only screen and (max-width:768px){
+            font-size:23px;
+            line-height: 31px;
         }
         @media only screen and (max-width:400px){
+            font-size:20px;
+            line-height: 27px;
             min-width: 100%;
-            width:100%;
-            margin-top:0;
+            padding:30px 5px;
+            margin-top: 25px;
         }
-       
         
-        
+
         &::before {
         content: "";
         position: absolute;
@@ -114,8 +116,6 @@
         &:hover::before {
             opacity: 0;
         }
-       
-       
-        
+
       }
 }

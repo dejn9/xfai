@@ -470,13 +470,18 @@ span {
   text-align: center;
   position: relative;
 }
+@media only screen and (max-width: 768px) {
+  .lgeHere {
+    padding-top: 110px;
+  }
+}
 .lgeHere .container {
   padding-bottom: 80px;
   border-bottom: 3px solid #333333;
 }
-@media only screen and (max-width: 668px) {
+@media only screen and (max-width: 768px) {
   .lgeHere .container {
-    padding-bottom: 40px;
+    padding-bottom: 50px;
   }
 }
 .lgeHere .bg {
@@ -504,13 +509,13 @@ span {
   font-family: Gobold;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 60px;
+  font-size: 72px;
   line-height: 79px;
 }
-@media only screen and (max-width: 668px) {
+@media only screen and (max-width: 768px) {
   .lgeHere__heading {
-    font-size: 46px;
-    line-height: 60px;
+    font-size: 67px;
+    line-height: 69px;
   }
 }
 .lgeHere__paragraph {
@@ -520,24 +525,20 @@ span {
   font-family: "EuclidCircular", Arial;
   line-height: 56px;
 }
-@media only screen and (max-width: 868px) {
+@media only screen and (max-width: 768px) {
   .lgeHere__paragraph {
-    font-size: 32px;
+    font-size: 35px;
+    line-height: 47px;
   }
 }
-@media only screen and (max-width: 668px) {
+@media only screen and (max-width: 360px) {
   .lgeHere__paragraph {
-    font-size: 24px;
-    line-height: 35px;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 .lgeHere__paragraph-1 {
   margin: 32px 0 21px 0;
-}
-@media only screen and (max-width: 668px) {
-  .lgeHere__paragraph-1 {
-    margin: 20px 0 20px 0;
-  }
 }
 .lgeHere__paragraph span {
   font-weight: 500;
@@ -559,18 +560,19 @@ span {
   transition: opacity 0.5s ease-in-out;
   color: white;
 }
-@media only screen and (max-width: 668px) {
+@media only screen and (max-width: 768px) {
   .lgeHere a {
-    font-size: 22px;
-    margin-top: 30px;
-    padding: 30px 5px;
+    font-size: 23px;
+    line-height: 31px;
   }
 }
 @media only screen and (max-width: 400px) {
   .lgeHere a {
+    font-size: 20px;
+    line-height: 27px;
     min-width: 100%;
-    width: 100%;
-    margin-top: 0;
+    padding: 30px 5px;
+    margin-top: 25px;
   }
 }
 .lgeHere a::before {
