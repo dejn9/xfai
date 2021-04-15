@@ -34,8 +34,11 @@
             grid-template-columns: repeat(2,1fr);
         }
        
-        img {
-            max-width:150px;
+        a {
+            img {
+
+                max-width:150px;
+            }
             
            
             &:nth-of-type(7), &:nth-of-type(8),&:nth-of-type(9),&:nth-of-type(10),&:nth-of-type(11){
