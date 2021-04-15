@@ -536,6 +536,12 @@ span {
     line-height: 73px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .lgeHere__heading {
+    font-size: 55px;
+    line-height: 66px;
+  }
+}
 @media only screen and (max-width: 360px) {
   .lgeHere__heading {
     font-size: 40px;
@@ -553,6 +559,12 @@ span {
   .lgeHere__paragraph {
     font-size: 35px;
     line-height: 47px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .lgeHere__paragraph {
+    font-size: 29px;
+    line-height: 39px;
   }
 }
 @media only screen and (max-width: 360px) {
@@ -593,6 +605,7 @@ span {
   .lgeHere a {
     font-size: 23px;
     line-height: 31px;
+    padding: 36px 5px;
   }
 }
 @media only screen and (max-width: 450px) {
