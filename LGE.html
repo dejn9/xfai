@@ -108,7 +108,7 @@
           </p>
           <p class='hero__paragraph-2'><span>COMING TO YOU ON</span> APRIL 16</p>
         </div>
-        <a href="#joinTheRevolution" class='btn__primary'>JOIN THE REVOLUTION</a>
+        <a href="#joinTheRevolution" class='btn__primary' data-lity>JOIN THE REVOLUTION</a>
       </div>
      
 
@@ -214,10 +214,40 @@
       <p>Contracts audited by
         <a target="_blank" href="https://omniscia.io/">omniscia.io</a>
         <span class="line"></span>
-        <a target="_blank" href="pdf/XFitTokenTermsAndConditions-TermsOfUse.pdf">Terms and conditions</a>
+        <a href="tos.html" data-lity class='tosBtn'>Terms and conditions</a>
       </p> 
     </div>
   </footer>
+
+  <style>
+    /* .noScroll {
+      overflow-y: hidden !important;
+    }
+    .scrollable {
+      overflow-y: visible !important;
+    } */
+    .lity-active,
+.lity-active body {
+    overflow: hidden;
+}
+  </style>
+  <script>
+    // let tosBtn = document.querySelector('.tosBtn');
+    // let lityClose = document.querySelector('.lity-close');
+    // let body = document.querySelector('body');
+    // tosBtn.addEventListener("click",function(){
+    //  if(body.classList.contains('scrollable')){
+    //   body.classList.remove('scrollable');
+    //     body.classList.add('noScroll');
+    //  }
+    // })
+    // lityClose.addEventListener("click",function(){
+    //   if(body.classList.contains('noScroll')){
+    //     body.classList.remove('noScroll');
+    //     body.classList.add('scrollable');
+    //   }
+    // })
+  </script>
 
   <script type="text/javascript" src="js/modal/jquery.js"></script>
   <script type="text/javascript" src="js/modal/lity.js"></script>
@@ -226,6 +256,11 @@
   <script src="js/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+  <script>
+    $(window).load(function(){
+    $('#exampleModal').modal('show');
+});
   </script>
  
   <script>
@@ -257,4 +292,5 @@
     })
   </script>
 </body>
+
 </html>
