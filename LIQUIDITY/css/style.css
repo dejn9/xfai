@@ -127,6 +127,11 @@ a {
   opacity: 0;
 }
 
+.lity-active,
+.lity-active body {
+  overflow: hidden;
+}
+
 @font-face {
   font-family: "Gobold";
   src: url("../fonts/Gobold.eot");

@@ -130,3 +130,8 @@ a {
 .btn__primary:hover::before,.btn__lightBlue:hover::before {
   opacity: 0;
 }
+
+.lity-active,
+.lity-active body {
+    overflow: hidden;
+}
