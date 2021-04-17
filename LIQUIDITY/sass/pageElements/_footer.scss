@@ -104,7 +104,9 @@
       font-size:13px;
       line-height: 17px;
       font-family:'EuclidCircular', Arial;
-      
+      @media only screen and (max-width:420px){
+        line-height: 40px;
+      }
     }
     span {
       height:100%;

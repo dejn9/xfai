@@ -2265,6 +2265,11 @@ span {
   line-height: 17px;
   font-family: "EuclidCircular", Arial;
 }
+@media only screen and (max-width: 420px) {
+  .footer__bottom p, .footer__bottom a {
+    line-height: 40px;
+  }
+}
 .footer__bottom span {
   height: 100%;
   width: 1px;
