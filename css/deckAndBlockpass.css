@@ -323,9 +323,10 @@ a.toc:hover {
         line-height: 39px;
         color:#FC307B;
         text-transform: uppercase;
-        font-family: Gobold;
+        font-family: Gobold bold;
         text-align: center;
 		margin-top: 100px;
+		font-weight: 400;
 }
 
 
