@@ -9,10 +9,7 @@
       padding-top: 63px;
       background-position: 50% 50%;
       position: relative;
-      &__p {
-        font-size:12px;
-        color:#707070;
-      }
+     
       &::after {
         content:'';
         position: absolute;
@@ -121,6 +118,7 @@
               margin-bottom: 50px;
             }
           }
+          
         }
       }
       &-1 {
@@ -152,4 +150,9 @@
       position: relative;
       z-index:3;
     }
+  }
+
+  .bg__p {
+    font-size:12px !important;
+    color:#707070;
   }

@@ -684,10 +684,6 @@ a {
   background-position: 50% 50%;
   position: relative;
 }
-.joinTheRevolution .bg__p {
-  font-size: 12px;
-  color: #707070;
-}
 .joinTheRevolution .bg::after {
   content: "";
   position: absolute;
@@ -827,6 +823,11 @@ a {
   margin-bottom: 50px;
   position: relative;
   z-index: 3;
+}
+
+.bg__p {
+  font-size: 12px !important;
+  color: #707070;
 }
 
 .potentializer .bg {
