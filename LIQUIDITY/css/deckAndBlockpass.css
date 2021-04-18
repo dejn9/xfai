@@ -315,3 +315,17 @@ a.toc:hover {
 		margin: 0px 20px;
 	}
 }
+
+.tosPage h2 {
+	font-size:30px;
+        line-height: 39px;
+        color:#FC307B;
+        text-transform: uppercase;
+        font-family: Gobold;
+        text-align: center;
+		margin-top: 100px;
+		font-weight: 400;
+}
+.tosPage .deckContent {
+	padding-top: 50px;
+}
